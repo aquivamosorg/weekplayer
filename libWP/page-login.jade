@@ -1,0 +1,22 @@
+<?php/* Theme: Week Template name: Login */ ?>
+doctype html
+html(lang="es")
+  <?php include('head.php'); ?>
+  body.blue.darken-2
+    header
+    .Login
+      .Login-content.white.z-depth-4
+        h3.Login-title.center-align <?php the_title(); ?>
+        .divider
+        .row
+          .col.s12.Login-form
+          // inicio codigo
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+          <?php the_content(); ?>
+          <?php endwhile; ?>
+          <?php endif; ?>
+          // termino codigo
+    //-Compiled and minified JavaScript
+    script(src='https://code.jquery.com/jquery-2.2.3.min.js', integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js')
+    script(src!="<?php bloginfo('template_url'); ?>/js/weeked.js")

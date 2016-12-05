@@ -1,0 +1,116 @@
+doctype html
+html(lang="es")
+  include templates/head.jade
+  body
+    header.row
+      include templates/nav.jade
+    .row.Contenedor-top
+    .row
+      section.container.Contenedor-productos
+        .col.s12.m3.l2.blanco 
+          .row
+            h2.Title-categori Categoria
+            .divider.row        
+          ul.collapsible(data-collapsible='accordion')
+            li
+              .collapsible-header
+                i.fa.fa-minus-square.blue-text.text-darken-4
+                | Television
+              .collapsible-body.collection
+                a.collection-item.blue-text.text-darken-4(href="#") Uno pero bien largo lo que se dice muy largo
+                a.collection-item.blue-text.text-darken-4(href="#") Dos 
+                a.collection-item.blue-text.text-darken-4(href="#") Tres
+            li
+              .collapsible-header
+                i.fa.fa-minus-square.blue-text.text-darken-4
+                | Paquetes
+              .collapsible-body.collection
+                a.collection-item.blue-text.text-darken-4(href="#") Uno
+                a.collection-item.blue-text.text-darken-4(href="#") Dos 
+                a.collection-item.blue-text.text-darken-4(href="#") Tres
+            li
+              .collapsible-header
+                i.fa.fa-minus-square.blue-text.text-darken-4
+                | Iphone
+              .collapsible-body
+                p Lorem ipsum dolor sit amet.        
+        .col.s12.m9.l10.blanco
+          .row
+            h2.Title-categori Categoria del producto
+            .divider.row
+            .col.s12.m6.l4
+              .card
+                span.Precio-card.blue.darken-4 $11.00
+                .card-image
+                  img(src='img/3rd_right_2.jpg')
+                .card-content 
+                  span.card-title.grey-text.text-darken-4 Titulo del productos
+                .card-action
+                  a.blue-text.text-darken-4(href="#") Es un link
+            .col.s12.m6.l4
+              .card
+                span.Precio-card.blue.darken-4 $11.00
+                .card-image
+                  img(src='img/3rd_right_2.jpg')
+                .card-content 
+                  span.card-title.grey-text.text-darken-4 Titulo del productos
+                .card-action
+                  a.blue-text.text-darken-4(href="#") Es un link
+            .col.s12.m6.l4
+              .card
+                span.Precio-card.blue.darken-4 $11.00
+                .card-image
+                  img(src='img/3rd_right_2.jpg')
+                .card-content 
+                  span.card-title.grey-text.text-darken-4 Titulo del productos
+                .card-action
+                  a.blue-text.text-darken-4(href="#") Es un link
+            .col.s12.m6.l4
+              .card
+                span.Precio-card.blue.darken-4 $11.00
+                .card-image
+                  img(src='img/3rd_right_2.jpg')
+                .card-content 
+                  span.card-title.grey-text.text-darken-4 Titulo del productos
+                .card-action
+                  a.blue-text.text-darken-4(href="#") Es un link
+            .col.s12.m6.l4
+              .card
+                span.Precio-card.blue.darken-4 $11.00
+                .card-image
+                  img(src='img/3rd_right_2.jpg')
+                .card-content 
+                  span.card-title.grey-text.text-darken-4 Titulo del productos
+                .card-action
+                  a.blue-text.text-darken-4(href="#") Es un link
+            .col.s12.m6.l4
+              .card
+                span.Precio-card.blue.darken-4 $11.00
+                .card-image
+                  img(src='img/3rd_right_2.jpg')
+                .card-content 
+                  span.card-title.grey-text.text-darken-4 Titulo del productos
+                .card-action
+                  a.blue-text.text-darken-4(href="#") Es un link                  
+    .row
+      .container
+        .divider 
+        h3.center-align.Title Buscanos en las Redes Sociales
+        .row
+          a.col.s6.m3.center-align.Contenedor-redes(href="#", title="Siguenos en Facebook")
+            i.col.s12.fa.fa-facebook.Red-facebook
+            span.grey-text.text-lighten-1.col.s12 Facebook
+          a.col.s6.m3.center-align.Contenedor-redes(href="#", title="Siguenos en Twitter")
+            i.col.s12.fa.fa-twitter.Red-twitter
+            span.grey-text.text-lighten-1.col.s12 Twitter
+          a.col.s6.m3.center-align.Contenedor-redes(href="#", title="Siguenos en Google Plus")
+            i.col.s12.fa.fa-google-plus.Red-plus
+            span.grey-text.text-lighten-1.col.s12 Google Plus
+          a.col.s6.m3.center-align.Contenedor-redes(href="#", title="Siguenos en Instagram")
+            i.col.s12.fa.fa-instagram.Red-instagram
+            span.grey-text.text-lighten-1.col.s12 Instagram            
+    include templates/footer.jade
+    //-Compiled and minified JavaScript
+    script(src='https://code.jquery.com/jquery-2.2.3.min.js', integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js')
+    script(src='js/weeked.js')      

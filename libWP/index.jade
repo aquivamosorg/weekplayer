@@ -1,0 +1,146 @@
+<?php/* Theme: Week Template name: Home */ ?>
+doctype html
+html(lang="es")
+  <?php include('head.php'); ?>
+  body
+    header.row
+      <?php include('nav.php'); ?>
+      .slider.z-depth-4
+        ul.slides
+          li
+            img(src!="<?php bloginfo('template_url'); ?>/img/prhome.jpg")
+            //-random image
+            //-.caption.center-align
+              h3 This is our big Tagline!
+              h5.light.grey-text.text-lighten-3 Here's our small slogan.
+          li
+            img(src!="<?php bloginfo('template_url'); ?>/img/women_banner_1920x590_1_.jpg")
+            //-random image
+            //-.caption.left-align
+              h3 Left Aligned Caption
+              h5.light.grey-text.text-lighten-3 Here's our small slogan.
+          li
+            img(src!="<?php bloginfo('template_url'); ?>/img/support_banner_1920x590-r-1.jpg")
+            //-random image
+            //-.caption.left-align
+              h3 Right Aligned Caption
+              h5.light.grey-text.text-lighten-3 Here's our small slogan.
+          li
+            img(src!="<?php bloginfo('template_url'); ?>/img/apparel_banner_1920x590-r-1_1.jpg")
+            //-random image
+            //-.caption.center-align
+              h3 This is our big Tagline!
+              h5.light.grey-text.text-lighten-3 Here's our small slogan.
+          li
+            img(src!="<?php bloginfo('template_url'); ?>/img/muay_thai_banner_1920x590-r-1_1.jpg")
+            //-random image
+            //-.caption.center-align
+              h3 This is our big Tagline!
+              h5.light.grey-text.text-lighten-3 Here's our small slogan.    
+    section.row
+      div.row.Contenedor
+        div.container
+          h2.center-align.Title Patrocinadores
+          div.row
+            div.col.s12.m6.l3
+              .card
+                .card-image.waves-effect.waves-block.waves-light
+                  img.activator(src!="<?php bloginfo('template_url'); ?>/img/2nd_left_5.jpg")
+                .card-content
+                  span.card-title.activator.grey-text.text-darken-4
+                    | Titulo del Productosss
+                    i.fa.fa-ellipsis-v.right
+                  p
+                    a(href='#') Ver Mas
+                .card-reveal
+                  span.card-title.grey-text.text-darken-4
+                    | Titulo del Producto
+                    i.fa.fa-close.right
+                  p
+                    | Here is some more information about this product that is only revealed once clicked on.
+            div.col.s12.m6.l3
+              .card
+                .card-image.waves-effect.waves-block.waves-light
+                  img.activator(src!="<?php bloginfo('template_url'); ?>/img/3rd_right_3.jpg")
+                .card-content
+                  span.card-title.activator.grey-text.text-darken-4
+                    | Titulo del Producto
+                    i.fa.fa-ellipsis-v.right
+                  p
+                    a(href='#') Ver Mas
+                .card-reveal
+                  span.card-title.grey-text.text-darken-4
+                    | Titulo del Producto
+                    i.fa.fa-close.right
+                  p
+                    | Here is some more information about this product that is only revealed once clicked on.
+            div.col.s12.m6.l3
+              .card
+                .card-image.waves-effect.waves-block.waves-light
+                  img.activator(src!="<?php bloginfo('template_url'); ?>/img/4th_left_3.jpg")
+                .card-content
+                  span.card-title.activator.grey-text.text-darken-4
+                    | Titulo del Producto
+                    i.fa.fa-ellipsis-v.right
+                  p
+                    a(href='#') Ver Mas
+                .card-reveal
+                  span.card-title.grey-text.text-darken-4
+                    | Titulo del Producto
+                    i.fa.fa-close.right
+                  p
+                    | Here is some more information about this product that is only revealed once clicked on.
+            div.col.s12.m6.l3
+              .card
+                .card-image.waves-effect.waves-block.waves-light
+                  img.activator(src!="<?php bloginfo('template_url'); ?>/img/2nd_left_1.png")
+                .card-content
+                  span.card-title.activator.grey-text.text-darken-4
+                    | Titulo del Producto
+                    i.fa.fa-ellipsis-v.right
+                  p
+                    a(href='#') Ver Mas
+                .card-reveal
+                  span.card-title.grey-text.text-darken-4
+                    | Titulo del Producto
+                    i.fa.fa-close.right
+                  p
+                    | Here is some more information about this product that is only revealed once clicked on.                  
+          div.row
+            div.col.s12
+              div.caption.right-align
+                a.waves-effect.waves-light.btn.blue.darken-4(href='https://google.com')
+                  i.fa.fa-arrow-right.right
+                  | Ver Mas
+      div.row.Contenedor-Gris.z-depth-3
+        div.container
+          h2.center-align.Title Trabaja con nosotros
+          div.row 
+            div.col.s12.l6.Contenedor-img
+              img.z-depth-3(src!="<?php bloginfo('template_url'); ?>/img/3rd_right_2.jpg")
+            div.card.col.s12.l6
+              h3.Title Plan de trabajo
+              p.flow-text Donald John Trump es un empresario, político, personalidad televisiva y escritor estadounidense, actual candidato del Partido Republicano a la Presidencia de los Estados Unidos para las elecciones presidenciales de 2016
+          div.row
+            div.col.s12
+              div.caption.right-align
+                a.waves-effect.waves-light.btn.blue.darken-4(href='https://google.com')
+                  i.fa.fa-arrow-right.right
+                  | Crear Cuenta
+      div.row.Contenedor
+        div.container
+          h2.center-align.Title Contrata nuestro paquete
+          div.caption.center-align.row
+            .video-container.z-depth-5
+              iframe(width='853', height='480', src='//www.youtube.com/embed/Q8TXgCzxEnw?rel=0', frameborder='0', allowfullscreen='')  
+          div.caption.right-align.row
+            div.col.s12
+              div.caption.right-align
+                a.waves-effect.waves-light.btn.blue.darken-4(href='https://google.com')
+                  i.fa.fa-arrow-right.right
+                  | Contratar
+    <?php include('footer.php'); ?>
+    //-Compiled and minified JavaScript
+    script(src='https://code.jquery.com/jquery-2.2.3.min.js', integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js')
+    script(src!="<?php bloginfo('template_url'); ?>/js/weeked.js")

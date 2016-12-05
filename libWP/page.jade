@@ -1,0 +1,41 @@
+doctype html
+html(lang="es")
+  <?php include('head.php'); ?>
+  body
+    header.row
+      <?php include('nav.php'); ?>
+    .grey.lighten-5.Page
+      section.row
+        .container.Page-content.white.z-depth-1
+          .row
+            .col.s12
+              h2.Title <?php the_title(); ?>
+              .divider.Page-title
+              .col.s12.m7.l8
+                p.red-text <strong>EJEMPLO DE CONTENIDO</strong>
+                p.flow-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quaerat maxime soluta ducimus officia a nobis. Eaque, voluptate, iure. Esse cupiditate deserunt tempora, consequatur perferendis. Neque quia perferendis ducimus, consequatur.
+                p.flow-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quaerat maxime soluta ducimus officia a nobis. Eaque, voluptate, iure. Esse cupiditate deserunt tempora, consequatur perferendis. Neque quia perferendis ducimus, consequatur.
+                p.flow-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quaerat maxime soluta ducimus officia a nobis. Eaque, voluptate, iure. Esse cupiditate deserunt tempora, consequatur perferendis. Neque quia perferendis ducimus, consequatur.
+                p.flow-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quaerat maxime soluta ducimus officia a nobis. Eaque, voluptate, iure. Esse cupiditate deserunt tempora, consequatur perferendis. Neque quia perferendis ducimus, consequatur.
+                p.flow-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quaerat maxime soluta ducimus officia a nobis. Eaque, voluptate, iure. Esse cupiditate deserunt tempora, consequatur perferendis. Neque quia perferendis ducimus, consequatur.
+                p.flow-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quaerat maxime soluta ducimus officia a nobis. Eaque, voluptate, iure. Esse cupiditate deserunt tempora, consequatur perferendis. Neque quia perferendis ducimus, consequatur.
+                p.flow-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quaerat maxime soluta ducimus officia a nobis. Eaque, voluptate, iure. Esse cupiditate deserunt tempora, consequatur perferendis. Neque quia perferendis ducimus, consequatur.
+                p.flow-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quaerat maxime soluta ducimus officia a nobis. Eaque, voluptate, iure. Esse cupiditate deserunt tempora, consequatur perferendis. Neque quia perferendis ducimus, consequatur.
+              .col.s12.m5.l4
+                h4 Principales Subastas
+                .divider.Page-title
+                <?php include('sidebar-menu.php'); ?>             
+                h4 Subastas Recientes
+                .divider.Page-title                
+                .grey.lighten-4.Sider
+                  <?php rewind_posts(); ?>           
+                  <?php query_posts('post_type=subastas'); ?>
+                  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                  <?php include('sidebar-page.php'); ?>
+                  <?php endwhile; ?>
+                  <?php endif; ?>
+      <?php include('footer.php'); ?>
+    //-Compiled and minified JavaScript
+    script(src='https://code.jquery.com/jquery-2.2.3.min.js', integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js')
+    script(src!="<?php bloginfo('template_url'); ?>/js/weeked.js")

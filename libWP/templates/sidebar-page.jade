@@ -1,0 +1,8 @@
+a.Sider-link.row(href!="<?php the_permalink() ?>")
+  .card
+    .col.s5
+      .card-image
+        <?php the_post_thumbnail( 'card-thumb' ); ?>
+    .col.s7
+      h5.grey-text.darken-4.card-title <?php the_title(); ?>
+      span.right-align.Sider-span Ver Mas

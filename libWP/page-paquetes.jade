@@ -1,0 +1,29 @@
+<?php/* Theme: Week Template name: Paquetes */ ?>
+doctype html
+html(lang="es")
+  <?php include('head.php'); ?>
+  body
+    header.row
+      <?php include('nav.php'); ?>
+    .row.Contenedor-top
+    .row
+      section.container.Contenedor-productos
+        .col.s12.m3.l2.blanco
+          <?php include('sidebar.php'); ?>
+        .col.s12.m9.l10.blanco
+          .row
+            h2.Title-categori <?php the_title(); ?>
+            .divider.row
+            <?php $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; $args=array('paged'=>$paged, 'post_type'=>'subastas'); query_posts($args); ?>
+            <?php query_posts('post_type=subastas&category_name=paquetes'); ?>
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <?php include('card.php'); ?>
+            <?php endwhile; ?>
+            <?php endif; ?>
+    .row
+      <?php include('redes-sociales.php'); ?>
+    <?php include('footer.php'); ?>
+    //-Compiled and minified JavaScript
+    script(src='https://code.jquery.com/jquery-2.2.3.min.js', integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js')
+    script(src!="<?php bloginfo('template_url'); ?>/js/weeked.js")
